@@ -6,7 +6,7 @@ html,body {
 
 /* PROBLEM 2: Select profile picture and make it round */
 /* YOUR CODE HERE */
-#header #profile{
+#header #profile-pic{
   overflow: hidden;
   border-radius: 50%;
 }
