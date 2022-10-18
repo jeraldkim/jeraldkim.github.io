@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2C5F2D;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    background-color: rgba(152,251,152,1);
+    /* Make the header stick to the top as you scroll */
+    position: fixed;
+    z-index: 1;
+}
+
+.content {
+    width: 800px;
+    /* Align the page content to the center of the screen */
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+#title {
+  text-align: center;
+  font-family: 'Playfair Display';
+  font-size: 40px;
+}
+
+h1 {
+  font-family: 'Oswald', serif;
+  font-size: 45px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+  font-size:40px;
+  transition: all 500ms;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 25px;
+}
+
+.menu li {
+  margin-right: 25px;
+}
+
+
+#bottom {
+  margin-top: 20px;
+  border-top: 5px solid #CC313D;
+}
+
+#bottom p{
+  display: flex;
+  justify-content: center;
+}
+
+#alfredo {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+
+}
