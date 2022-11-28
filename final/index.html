@@ -1,6 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <body>
-        FINAL
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+    <script src="assets/scripts/script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="website">
+      <div id= "box1" class="container">
+        <h1>Why Invest?</h1>
+        <img src="assets/images/arrow.png" class="container_arrow">
+      </div>
+      <div id= "box2" class="container">
+        <h2>Investing is Essential</h2>
+        <p>With Inflation Rates being reported as high as  8.8%, <br>money stored in a savings account would lose value overtime.</br></p>
+      </div>
+      <div id= "box3" class="container">
+        <h3>Investing is For Everyone</h3>
+        <h2>You don't have to start Big</h2>
+        <p>You can start however small you want.</p>
+        <p>Add to it consistently over a long period of time and it will start to accumulate through the power ofcompounding.</p>
+      </div>
+      <div id= "box4" class="container">
+        <h2>Investing is Easy</h2>
+        <p>You don’t have to research what stock to buy. </p>
+        <p>Instead buy the S&P 500 through ETFs like VOO, SPY. The S&P 500 is an index that tracks the Top 500 Biggest Companies in the US.</p>
+      </div>
+      <div id= "box5" class="container">
+        <h2>S&P 500 is Reliable</h2>
+        <p>Since 1923, S&P 500 has made gains to this day in 2022,<br>averaging an annual return of 9.77%.</br></p>
+        <img src="assets/images/S&P500.png" id="sp500" alt="not showing">
+      </div>
+      <div id= "box6" class="container">
+        <h2>Plan Your Investing</h2>
+        <h4>Starting Amount: <input type="integer" id="myText1" value="1000"></h4>
+        <h4>Monthly Amount: <input type="integer" id="myText2" value="100"></h4>
+        <h4>Number of Years: <input type="integer" id="myText3" value="10"></h4>
+        <button id= "submit_button" onclick="Submit()">Submit</button>
+        <div id= "graph-box" class="graph-container">
+        </div>
+        <h3 id="end_amount">End Amount: ?</h3>
+        <p>Disclaimer: this is not an entirely accurate model of how investing works since the stock market doesn’t always go up everyday. It only goes up in the long run. This a simulation based on the average annual return of the S&P 500.</p>
+      </div>
+    </div>
+</body>
+
+
+
+
 </html>

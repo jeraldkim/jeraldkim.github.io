@@ -1,0 +1,115 @@
+body {
+  background-color: #002736;
+}
+
+#website {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+    width: 1440px;
+    height: 800px;
+    margin: 10px auto;
+    background-color: #00a3df;
+    border-radius: 20px;
+    position: relative;
+    color: #FFFFFF;
+    font-family: IBM Plex Sans;
+    display: flex;
+    flex-direction: column;
+}
+
+#box6 {
+  height: 2200px;
+}
+
+.container_arrow {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  opacity: 50%;
+  /* z-index: -5; */
+  position: absolute;
+  bottom: 30px;
+}
+
+h1 {
+  font-size: 128px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 96px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 64px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 48px;
+  text-align: center;
+}
+
+p {
+  font-size: 36px;
+  text-align: center;
+}
+
+
+#box1 h1 {
+  padding: 200px 0;
+}
+
+#sp500 {
+  width: 720px;
+  height: 300px;
+  border-left: 4px solid #FFFFFF;
+  border-bottom: 4px solid #FFFFFF;
+  margin: auto;
+  display: block;
+}
+
+.graph-container {
+  width: 1200px;
+  height: 800px;
+  padding: 40px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#box6 {
+  align-items: center;
+  justify-content: center;
+}
+
+#myText1, #myText2, #myText3 {
+  font-size: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #002736;
+  border: 0px;
+  border-radius: 12px;
+}
+
+#myText1:hover, #myText2:hover, #myText3:hover {
+  background-color: #015575;
+}
+
+#submit_button {
+  font-size: 48px;
+  color: #FFFFFF;
+  background-color: #002736;
+  border: 0px;
+  border-radius: 12px;
+}
+
+#submit_button:hover {
+  background-color: #015575;
+  color: white;
+}
