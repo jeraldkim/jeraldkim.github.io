@@ -1,5 +1,7 @@
 body {
   background-color: #002736;
+  padding: 0;
+  margin: 0;
 }
 
 #website {
@@ -29,9 +31,14 @@ body {
   width: 100%;
   object-fit: contain;
   opacity: 50%;
-  /* z-index: -5; */
   position: absolute;
   bottom: 30px;
+  animation-name: stock-increase;
+  animation-duration: 2s;
+}
+
+#box1 {
+  overflow: hidden;
 }
 
 h1 {
@@ -168,7 +175,7 @@ mark.green {
   animation-name: grow;
   animation-duration: 1s;
   cursor: default;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 #big-text {
@@ -195,7 +202,7 @@ mark.green {
     transform: scale(1)
   }
   to {
-    transform: scale(1.3)
+    transform: scale(1.2)
   }
 }
 
@@ -210,7 +217,7 @@ mark.green {
 
 @keyframes reverse-grow {
   from {
-    transform: scale(1.3)
+    transform: scale(1.2)
   }
   to {
     transform: scale(1)
@@ -223,5 +230,15 @@ mark.green {
   }
   to {
     transform: scale(1)
+  }
+}
+
+
+@keyframes stock-increase {
+  from {
+    transform: translate(-100%,100%);
+  }
+  to {
+    transform: translate(0%,0%);
   }
 }
