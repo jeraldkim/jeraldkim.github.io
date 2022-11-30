@@ -10,7 +10,7 @@ body {
 .container {
     width: 1440px;
     height: 800px;
-    margin: 10px auto;
+    margin: 20px auto;
     background-color: #00a3df;
     border-radius: 20px;
     position: relative;
@@ -40,21 +40,27 @@ h1 {
 }
 
 h2 {
+  font-family: 'Overpass', sans;
   font-size: 96px;
   text-align: center;
 }
 
 h3 {
+  font-family: 'Overpass', sans;
   font-size: 64px;
   text-align: center;
 }
 
 h4 {
+  font-family: 'Overpass', sans;
   font-size: 48px;
   text-align: center;
+  display: flex;
+  flex-direction: horizontal;
 }
 
 p {
+  font-family: 'Overpass', sans;
   font-size: 36px;
   text-align: center;
 }
@@ -101,7 +107,12 @@ p {
   background-color: #015575;
 }
 
+#myText1:hover + .tooltiptext, #myText2:hover + .tooltiptext, #myText3:hover + .tooltiptext{
+  visibility: visible;
+}
+
 #submit_button {
+  font-family: 'Overpass', sans;
   font-size: 48px;
   color: #FFFFFF;
   background-color: #002736;
@@ -111,5 +122,106 @@ p {
 
 #submit_button:hover {
   background-color: #015575;
-  color: white;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Lobster', display;
+  animation-duration: 3s;
+  animation-name: appear;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h4 .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: #015575;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 12px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+mark.red {
+  color:#ff0000;
+  background: none;
+}
+
+mark.green {
+  color:#00FF00;
+  background: none;
+}
+
+#big-text:hover {
+  animation-name: grow;
+  animation-duration: 1s;
+  cursor: default;
+  transform: scale(1.3);
+}
+
+#big-text {
+  animation-name: reverse-grow;
+  animation-duration: 1s;
+  transform: scale(1);
+}
+
+#small-text:hover {
+  animation-name: shrink;
+  animation-duration: 1s;
+  cursor: default;
+  transform: scale(0.7);
+}
+
+#small-text {
+  animation-name: reverse-shrink;
+  animation-duration: 1s;
+  transform: scale(1);
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1)
+  }
+  to {
+    transform: scale(1.3)
+  }
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1)
+  }
+  to {
+    transform: scale(0.7)
+  }
+}
+
+@keyframes reverse-grow {
+  from {
+    transform: scale(1.3)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+@keyframes reverse-shrink {
+  from {
+    transform: scale(0.7)
+  }
+  to {
+    transform: scale(1)
+  }
 }

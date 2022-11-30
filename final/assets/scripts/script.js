@@ -38,6 +38,7 @@ function Submit() {
 
   // create a line series and set the data
   var series = chart.line(data);
+  series.name("Current Investment");
 
   // set the container id
   chart.container("graph-box");
