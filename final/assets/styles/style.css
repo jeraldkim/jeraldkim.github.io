@@ -166,6 +166,32 @@ mark.red {
   background: none;
 }
 
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+#box2 p:hover{
+  animation-duration: 0.7s;
+  animation-name: shake;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(25px);
+  }
+
+  50% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 mark.green {
   color:#00FF00;
   background: none;
@@ -241,4 +267,8 @@ mark.green {
   to {
     transform: translate(0%,0%);
   }
+}
+
+
+
 }
